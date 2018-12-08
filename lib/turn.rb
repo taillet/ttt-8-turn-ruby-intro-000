@@ -30,8 +30,6 @@ def turn(board)
     turn(board)
   end
 end
-
-
 # code your #valid_move? method here
 
 def valid_move?(board, index)
@@ -41,11 +39,10 @@ def valid_move?(board, index)
     true
   elsif position_taken?(board, index) == true
     false
-    else
+  else
     true
   end
 end
-
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 
 def position_taken?(board, index)
